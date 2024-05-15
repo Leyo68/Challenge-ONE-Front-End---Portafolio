@@ -1,12 +1,9 @@
 /*CSS Reset / Normalize*/
 /* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
 en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
 
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
 }
@@ -39,52 +36,266 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+
 /*Sección Menu*/
 
-section.menu{
+.menu{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
 
+.menu__header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.menu__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 10px;
+}
+
+.menu__list__item__contacto{
+    font-weight: bold;
 }
 
 /*Sección Title*/
 
-section.title{
+.title{
+    display: flex;
+    
+}
 
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 150px; 
+    margin-bottom: 20px;
+    margin-left: 150px; 
+    
+}
+
+.title__container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.title__bio{
+    font-size: 30px;
+}
+
+.title__network{
+    display: flex;
+    gap: 30px;
+    padding: 0px;
 }
 
 /*Sección About*/
 
-section.about{
+.about{
+    display: flex;
+    background-color: aquamarine;
+    padding: 30px 150px 30px 150px;
+    
+}
 
+.about__container{
+    width: 60%;
+    
+}
+
+/*Sección Skills*/
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 150px; 
+    margin-bottom: 0px;
+    margin-left: 150px;
+}
+
+.skills__line{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.skills__box ul{
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0%;
+    margin-right: 20px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    width: 176px;
+    height: 174px;
+    
 }
 
 /*Sección Hobbies*/
 
-section.hobbies{
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 150px; 
+    margin-bottom: 0px;
+    margin-left: 150px;
+    
+}
+
+.hobbies__line{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hobbies__box ul{
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0%;
+    margin-right: 20px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    width: 176px;
+    height: 174px;
     
 }
 
 /* Experiencia Académica*/
 
 section.academic{
-
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
 }
+
+.academic__courses{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 150px; 
+    margin-right: 150px;
+}
+
+.academic__courses__box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+
 
 /* experiencia*/
 
-section.experience{
-
+.experience__section__title{
+    display: flex;
+    justify-content: center;
 }
+
+section.experience{
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experiencie__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    
+    
+}
+
+
+
+.experience__info{
+    margin-left: 10px;
+}
+.experience__info-container{
+    margin-right: 10px;
+}
+
+.experience__box{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
 
 /*Contacto*/
 
 section.formcontato{
+    display: flex;
+    justify-content: center;
 
 }
+.formcontato__contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.formcontato__input{
+    height: 40px;
+    border: none;
+}
+.formcontato__textarea{
+    border: none;
+}
+.formcontato__botao{
+    display: flex;
+    background-color: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    border: none;
+}
+
+.formcontato__botao:hover{
+    background-color: gray;
+}
+
 
 /*footeer*/
 
-section.footer{
-   
+section.footer p{
+   display: flex;
+   width: 100%;
+   align-content: center;
+   justify-content: center;
+   font-style: italic;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
